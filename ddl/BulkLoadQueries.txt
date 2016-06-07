@@ -1,0 +1,81 @@
+BULK INSERT dbo.Books
+    FROM 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\books_authors2.txt'
+    WITH
+    (
+	DATAFILETYPE = 'char',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = '\t',  --CSV field delimiter
+    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+    TABLOCK,
+	ERRORFILE = 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\book_authors_errors.txt'
+    )
+
+	
+	
+BULK INSERT dbo.Books
+    FROM 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\borrowers.txt'
+    WITH
+    (
+	DATAFILETYPE = 'char',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = '\t',  --CSV field delimiter
+    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+    TABLOCK,
+	ERRORFILE = 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\borrowers_errors.txt'
+    )
+
+	
+	BULK INSERT dbo.books_authors
+    FROM 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\books_authors3.txt'
+    WITH
+    (
+	DATAFILETYPE = 'char',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = '\t',  --CSV field delimiter
+    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+    TABLOCK,
+	ERRORFILE = 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\book_authors_errors.txt'
+    )
+
+		
+	BULK INSERT dbo.library_branch
+    FROM 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\library_branch2.txt'
+    WITH
+    (
+	DATAFILETYPE = 'char',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = '\t',  --CSV field delimiter
+    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+    TABLOCK,
+	ERRORFILE = 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\library_branch2_errors.txt'
+    )
+
+
+	BULK INSERT dbo.book_copies
+    FROM 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\book_copies1.txt'
+    WITH
+    (
+	DATAFILETYPE = 'char',
+    FIRSTROW = 2,
+    FIELDTERMINATOR = '\t',  --CSV field delimiter
+    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+    TABLOCK,
+	ERRORFILE = 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\book_copies1_errors.txt'
+    )
+	
+	
+	
+		BULK INSERT dbo.book_loans
+	    FROM 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\book_loans_data_F15.txt'
+	    WITH
+	    (
+		DATAFILETYPE = 'char',
+	    FIRSTROW = 2,
+	    FIELDTERMINATOR = '\t',  --CSV field delimiter
+	    ROWTERMINATOR = '\n',   --Use to shift the control to next row
+	    TABLOCK,
+		ERRORFILE = 'C:\Users\KarthikNithya\Downloads\SQL_library_project_data (1)\SQL_library_project_data\book_loans_errors.txt'
+	    )
+	    
+	    
+	
